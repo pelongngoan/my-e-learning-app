@@ -7,12 +7,12 @@ import { usePathname } from "next/navigation";
 const guestRoutes = [
   {
     icon: Layout,
-    lable: "Dashboard",
+    label: "Dashboard",
     href: "/",
   },
   {
     icon: Compass,
-    lable: "Browse",
+    label: "Browse",
     href: "/search",
   },
 ];
@@ -20,12 +20,12 @@ const guestRoutes = [
 const teacherRoutes = [
   {
     icon: List,
-    lable: "Courses",
+    label: "Courses",
     href: "/teacher/courses",
   },
   {
     icon: BarChart,
-    lable: "Analytics",
+    label: "Analytics",
     href: "/teacher/analytics",
   },
 ];
@@ -39,7 +39,7 @@ const SidebarRoutes = () => {
         <SidebarItem
           key={routes.href}
           icon={routes.icon}
-          lable={routes.lable}
+          label={routes.label}
           href={routes.href}
         />
       ))}

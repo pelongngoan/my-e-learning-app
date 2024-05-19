@@ -6,10 +6,10 @@ import { usePathname, useRouter } from "next/navigation";
 
 interface SidebarItemProps {
   icon: LucideIcon;
-  lable: string;
+  label: string;
   href: string;
 }
-const SidebarItem = ({ icon: Icon, lable, href }: SidebarItemProps) => {
+const SidebarItem = ({ icon: Icon, label, href }: SidebarItemProps) => {
   const pathname = usePathname();
   const router = useRouter();
   const isActive =
@@ -34,7 +34,7 @@ const SidebarItem = ({ icon: Icon, lable, href }: SidebarItemProps) => {
           size={22}
           className={cn("text-slate-500", isActive && "text-sky-700")}
         />
-        {lable}
+        {label}
       </div>
       <div
         className={cn(
