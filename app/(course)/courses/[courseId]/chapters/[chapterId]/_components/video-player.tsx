@@ -68,7 +68,6 @@ export const VideoPlayer = ({
           className={cn(!isReady && "hidden")}
           onCanPlay={() => setIsReady(true)}
           onEnded={onEnd}
-          audio
           playbackId={playbackId}
         />
       )}
